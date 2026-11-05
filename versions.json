@@ -1,0 +1,12 @@
+{
+  "chrome": {
+    "version": "1.7.0",
+    "download": "https://github.com/jiubihua/shitu-tools/raw/refs/heads/main/downloads/shitu-chrome.zip",
+    "updateMode": "manual-reload"
+  },
+  "eagle": {
+    "version": "1.6.2",
+    "install": "https://raw.githubusercontent.com/jiubihua/shitu-tools/main/eagle/eagle-xhs.user.js",
+    "updateMode": "tampermonkey"
+  }
+}

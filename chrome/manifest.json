@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "拾图 · 小红书图片助手",
+  "version": "1.7.0",
+  "description": "按笔记标题批量保存独立图片和视频，并自动生成来源与图片清单。",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "offscreen"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "拾图 · 图片与视频"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "host_permissions": [
+    "https://*.xhscdn.com/*",
+    "https://*.xiaohongshu.com/*",
+    "https://*.xhscdn.net/*"
+  ]
+}

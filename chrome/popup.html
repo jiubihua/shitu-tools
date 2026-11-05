@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拾图</title><link rel="stylesheet" href="popup.css"></head>
+<body><header><div class="brand"><svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3" y="3" width="22" height="22" rx="6" stroke="currentColor" stroke-width="2"/><path d="m5 20 7-7 5 5 4-4 4 4" stroke="currentColor" stroke-width="2"/><circle cx="19" cy="9" r="2" fill="currentColor"/></svg><h1>拾图</h1></div><span class="version">v1.7.0</span></header>
+<main><div class="actions"><button id="saveAll" class="primary">保存</button><button id="scan" class="secondary">重新提取</button></div>
+<div class="options"><label class="option"><input id="organize" type="checkbox" checked> 创建笔记文件夹</label><label class="option"><input id="createReport" type="checkbox" checked> 生成 TXT 清单</label></div>
+<p id="status" role="status" aria-live="polite" hidden></p>
+<section id="job" hidden aria-live="polite"><p id="progress" role="status"></p><details id="errorDetails" hidden><summary>查看失败原因</summary><ul id="errors"></ul></details></section>
+<section id="results" hidden><h2 id="title"></h2><div class="toolbar"><label><input id="all" type="checkbox" checked> 全选</label><span id="count"></span></div><div id="mediaScroll"><h3 id="imageHeading">图片</h3><div id="grid"></div><h3 id="videoHeading">视频</h3><div id="videos"></div></div></section>
+<section id="empty" class="empty"><p>打开笔记，提取图片和视频</p></section></main>
+<script src="extract.js"></script><script src="folder-store.js"></script><script src="preview.js"></script><script src="popup.js"></script></body></html>
